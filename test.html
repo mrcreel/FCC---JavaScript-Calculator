@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Load local javascript & CSS files -->
-    <script src="js/script.js" type="text/javascript">
-    </script>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+<head>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+    </script>
+    <!-- Load local javascript & CSS files -->
+    <script src="js/script.js" type="text/javascript"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
     <!--Load Roboto font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
-
     <title></title>
-  </head>
+    <style type="text/css"></style>
+</head>
 
-  <body>
-    <main class="container">
-      <p class="display" id="display1" style="border: solid black 1px;">
-        DISPLAY1
-      </p>
-      <div class="row">
-        <button class="btn key" id="key1">
-          1
-        </button>
-      </div>
-      <div class="row">
-        <button class="btn key" id="key=">
-          =
-        </button>
-      </div>
+<body>
+    <main class="container" style="width: 50%;">
+        <div class="row"><p class="display" id="display1">0</p></div>
+        <div class="row"><p class="display" id="display2">0</p></div>
+        <div class="row">
+            <button class="btn col s3 key key-clear" id="keyClear">C</button>
+            <button class="btn col s3 key key-clear" id="keyBack" value=""><-- </button>
+            <button class="btn col s3 key " id="keyNegative" value="-1"
+             style="background-color: red !important">
+            	+/-
+            </button>
+            <button class="btn col s3 key key-operation" id="keyMultiply" value="*">*</button>
+        </div>
+        <div class="row">
+            <button class="btn col s3 key key-number" id="key7" value="7">7</button>
+            <button class="btn col s3 key key-number" id="key8" value="8">8</button>
+            <button class="btn col s3 key key-number" id="key9" value="9">9</button>
+            <button class="btn col s3 key key-operation" id="keyDivide" value="/">/</button>
+        </div>
+        <div class="row">
+            <button class="btn col s3 key key-number" id="key4" value="4">4</button>
+            <button class="btn col s3 key key-number" id="key5" value="5">5</button>
+            <button class="btn col s3 key key-number" id="key6" value="6">6</button>
+            <button class="btn col s3 key key-operation" id="keyPlus" value="+">+</button>
+        </div>
+        <div class="row">
+            <button class="btn col s3 key key-number" id="key1" value="1">1</button>
+            <button class="btn col s3 key key-number" id="key2" value="2">2</button>
+            <button class="btn col s3 key key-number" id="key3" value="3">3</button>
+            <button class="btn col s3 key key-operation" id="keyMinus" value="-">-</button>
+        </div>
+        <div class="row">
+            <button class="btn col s6 key key-number" id="key0" value="0">0</button>
+            <button class="btn col s3 key key-point" id="keyPoint" value="." style="background-color: red !important">
+                .
+            </button>
+            <button class="btn col s3 key key-operation" id="keyEqual" value="=">=</button>
+        </div>
     </main>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-  </body>
+</body>
 
 </html>

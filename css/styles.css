@@ -1,0 +1,21 @@
+
+.key-number, .key-point{
+	background-color: grey !important;
+}
+.key-memory{
+	background-color: black !important;
+}
+.key-clear{
+	background-color: orange !important;
+	color: black !important;
+}
+.key-operation{
+	color: black !important;
+	background-color: red !important;
+}
+#keyEqual{
+	background-color: green !important;
+}
+.display{
+	border: solid black 1px !important;
+}

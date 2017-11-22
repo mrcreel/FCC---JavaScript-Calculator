@@ -16,6 +16,12 @@
 #keyEqual{
 	background-color: green !important;
 }
-.display{
-	border: solid black 1px !important;
+.mdl-cell{
+	padding: 1px;
+	margin: 1px;
+	border: 1px solid #E0E0E0;
+}
+.mdl-grid{
+	padding: 1px;
+	margin: 1px
 }

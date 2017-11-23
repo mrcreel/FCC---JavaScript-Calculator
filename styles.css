@@ -1,27 +1,3 @@
-
-.key-number, .key-point{
-	background-color: grey !important;
-}
-.key-memory{
-	background-color: black !important;
-}
-.key-clear{
-	background-color: orange !important;
-	color: black !important;
-}
-.key-operation{
-	color: black !important;
-	background-color: red !important;
-}
-#keyEqual{
-	background-color: green !important;
-}
-.mdl-cell{
-	padding: 1px;
-	margin: 1px;
-	border: 1px solid #E0E0E0;
-}
-.mdl-grid{
-	padding: 1px;
-	margin: 1px
+.col{
+	border: 1px solid grey;
 }

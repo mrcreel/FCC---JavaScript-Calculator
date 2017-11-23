@@ -2,39 +2,196 @@
 <html lang="en">
 
 <head>
-  <title>Hello, world!</title>
+  <title>
+    Calculator
+  </title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <main>
-    <h1>Hello, world!</h1>
+    <div class="container text-right" style="max-width: 450px;">
+      <div class="row">
+        <div
+          class="col display"
+          id="display1"
+          >
+          Display1
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col display"
+          id="display2"
+          >
+          Display2
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <button
+          class="col col-sm-3 btn btn-light key"
+          id="keyClear"
+          value=""
+          >
+          C
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key"
+          id="keyBack"
+          value=""
+          >
+          <--
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key"
+          id="keyNegative"
+          value="-1"
+          >
+          +/-
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-operation"
+          id="keyMultiply"
+          value="*"
+          >
+          *
+        </button>
+      </div>
+
+      <div class="row text-center">
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key9"
+          value="9"
+          >
+          9
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key8"
+          value="8"
+          >
+          8
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key7"
+          value="7"
+          >
+          7
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-operation"
+          id="keyDivide"
+          value="/"
+          >
+          /
+        </button>
+      </div>
+
+      <div class="row text-center">
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key6"
+          value="6"
+          >
+          6
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key5"
+          value="5"
+          >
+          5
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key4"
+          value="4"
+          >
+          4
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-operation"
+          id="keyMinus"
+          value="-"
+          >
+          -
+        </button>
+      </div>
+
+      <div class="row text-center">
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key3"
+          value="3"
+          >
+          3
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key2"
+          value="2"
+          >
+          2
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="key1"
+          value="1"
+          >
+          1
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-operation"
+          id="keyPlus"
+          value="+"
+          >
+          +
+        </button>
+      </div>
+
+      <div class="row text-center">
+        <button
+          class="col col-sm-6 btn btn-light key key-number"
+          id="key0"
+          value="0"
+          >
+          0
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-number"
+          id="keyPoint"
+          value="."
+          >
+          .
+        </button>
+        <button
+          class="col col-sm-3 btn btn-light key key-operation"
+          id="keyEqual"
+          value="="
+          >
+          =
+        </button>
+      </div>
+    </div>
   </main>
-  <div id="scripts">
-    <!-- Optional JavaScript -->
+  <footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-      crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
     </script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-      crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
     </script>
     <script src="script.js" type="text/javascript"></script>
-  </div>
+  </footer>
 </body>
 
 </html>
